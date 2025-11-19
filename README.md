@@ -19,6 +19,8 @@ DXR을 이용한 레이트레이싱과 IOCP 서버를 이용해 고퀄리티 3D 
 그래픽스 소개 영상 https://youtu.be/4zQhTkB0FRM
 
 ## 추가 사항
+실행파일 다운로드를 원하시면 Release탭을 이용바랍니다.
+
 클라이언트 소스파일
 
 https://drive.google.com/file/d/1QCgWjl7ZBjCDZmhMN82MpkzA5qrswehr/view?usp=drive_link
