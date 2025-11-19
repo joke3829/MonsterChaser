@@ -526,7 +526,7 @@ void Monster::InitAttackRanges() {
 
     case MonsterType::Limadon:                                        //2라운드 잡몹
         Attacktypecount = 2;
-        AttackRange[0] = 8.0f;
+        AttackRange[0] = 8.0f;  // 8.f
         AttackRange[1] = 8.0f;
         m_chaseRange = 40.0f; // 추적 사거리 설정
         break;
@@ -534,7 +534,7 @@ void Monster::InitAttackRanges() {
     case MonsterType::Fulgurodonte:                                         //2라운드 잡몹
         Attacktypecount = 2;
         AttackRange[0] = 8.0f;
-        AttackRange[1] = -100.0f;                                             //원거리
+        AttackRange[1] = 27.0f;                                             //원거리
 		m_chaseRange = 35.0f; // 추적 사거리 설정
         break;
 

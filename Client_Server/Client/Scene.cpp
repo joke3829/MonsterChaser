@@ -3183,6 +3183,15 @@ void CRaytracingCaveScene::Create_Fulgurodonte()
 		}
 	}
 
+	for (auto& s : m_vMonsters[m_vMonsters.size() - 1]->getObject()->getObjects())
+	{
+		if (s->getFrameName() == "Fulgurodonte_BeakLowerLeft")
+		{
+			m_vMonsters[m_vMonsters.size() - 1]->SetHead(s.get());
+			break;
+		}
+	}
+
 	//m_pResourceManager->getMeshList().emplace_back(std::make_unique<Mesh>(XMFLOAT3(0.0f, 0.0f, 0.0f), 0.4f, "sphere"));
 	meshIndex = m_pResourceManager->getMeshList().size() - 1;
 	monster = dynamic_cast<Fulgurodonte*>(m_vMonsters.back().get());
@@ -3225,6 +3234,15 @@ void CRaytracingCaveScene::Create_Fulgurodonte()
 		newMonster->setRenderingObject(m_vMonsters.back()->getObject());
 		newMonster->setAnimationManager(m_vMonsters.back()->getAniManager());
 		Monsters[m_nMonsterNum] = std::move(newMonster);
+	}
+
+	for (auto& s : m_vMonsters[m_vMonsters.size() - 1]->getObject()->getObjects())
+	{
+		if (s->getFrameName() == "Fulgurodonte_BeakLowerLeft")
+		{
+			m_vMonsters[m_vMonsters.size() - 1]->SetHead(s.get());
+			break;
+		}
 	}
 
 	for (auto& o : newSkinningObject1->getObjects()) {
